@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EmplooyeApp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+    <style>
+        .container-fluid {
+            /* height: 100vh; */
+            /* background: linear-gradient(to top, #0062E6, #a733ff); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+        }
+
+        .box {
+
+            width: 400px;
+            height: 500px;
+            padding: 50px 40px;
+            box-sizing: border-box;
+            background: linear-gradient(#0062E6, #a733ff);
+            border-radius: 2%;
+
+        }
+    </style>
+
+
+</head>    
+    <body ng-app="employeeApp" >
+       
+      <div ng-view></div>
+      
+    <script src="employee.js"></script>
+    <script src="app/pages/controller.js"></script>
+    <script src="app/config.js"></script>
+
+    </body>
+</html>

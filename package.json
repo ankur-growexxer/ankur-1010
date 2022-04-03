@@ -1,0 +1,19 @@
+{
+  "name": "practical",
+  "version": "1.0.0",
+  "main": "employee.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-schema-form": "^0.8.13",
+    "angular-route": "^1.6.9",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
