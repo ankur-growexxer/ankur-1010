@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+<style>
+  .container{
+    padding-left: 200px;
+    
+  }
+  table{
+    padding-top: 20px;
+    height: 600px;
+  }
+</style>
+<div class="wrapper">
+    <side-menu-component></side-menu-component>
+    <header-component></header-component>
+    <br>
+    <div class="container">
+      <div class="sample ten">
+        <input type="text" name="search" ng-model="search.firstName" placeholder="search firstname">
+        
+      </div>
+      <div id="notFoundDiv" ng-show="(todoList|filter:search).length==0" style="color: red; font-weight: bold">No Records Found</div>
+      <table class="table  table-responsive  col-sm-12">
+    
+          <thead>
+    
+              <tr>
+    
+                  <th>FirstName</th>
+                  <th>LastName</th>
+                  <th>mobilenumber</th>
+                  <th>Email</th>
+                  <th>Date of Birth</th>
+                  <th>salary</th>
+    
+    
+    
+              </tr>
+    
+    
+    
+          </thead>
+    
+         
+    
+          <tbody>
+    
+              <tr ng-repeat="employee in todoList | filter:search">
+    
+                  <td>{{employee.firstName}}</td>
+                  <td>{{employee.lastName}}</td>
+                  <td>{{employee.contactNumber}}</td>
+                  <td>{{employee.email}}</td>
+                  <td>{{employee.dob|date}}</td>
+                  <td>{{employee.salary|currency}}</td>
+              </tr>
+    
+          </tbody>
+    
+      </table>
+    </div>
+   
+    <footer-component></footer-component>
+</div> 
+
+
+  <script src="plugins/jquery/jquery.min.js"></script>
+
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+
+<script src="dist/js/adminlte.js"></script>
+
+
+<script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="plugins/raphael/raphael.min.js"></script>
+<script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+
+<!-- <script src="dist/js/demo.js"></script> -->
+
+<script src="dist/js/pages/dashboard2.js"></script>
+
