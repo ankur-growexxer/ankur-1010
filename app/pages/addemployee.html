@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+<style>
+  .button {
+    border-radius: 10px;
+    width:100px;
+    background: rgb(177, 160, 160);
+    color: rgb(7, 3, 3);
+  }
+ 
+  .form-control#employeeForm-DoB {
+    padding-right:20px !important;
+}
+.form-control#employeeForm-salary {
+    padding-right:25px !important;
+}
+
+.box1 {
+
+width: 400px;
+height: 600px;
+padding: 50px 40px;
+box-sizing: border-box;
+border-radius: 2%;
+background-color: white;
+/* border: 1px solid black; */
+}
+h3{
+  color: black;
+}
+  
+
+</style>
+<div class="wrapper">
+  <side-menu-component></side-menu-component>
+  <header-component></header-component>
+<div class="container-fluid">
+
+  <div class="box1">
+
+      <h3>Employee Entry Form</h3><br>
+
+      <form sf-schema="schema" sf-form="form" sf-model="model" ng-submit="onSubmit(employeeForm)" name="employeeForm"></form>
+  
+  </div>
+</div>
+<footer-component></footer-component>
+  </div> 
+
+  <script src="plugins/jquery/jquery.min.js"></script>
+
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+
+  <script src="dist/js/adminlte.js"></script>
+  
+
+  <script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+  <script src="plugins/raphael/raphael.min.js"></script>
+  <script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+  <script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+
+
+  <!-- <script src="dist/js/demo.js"></script> -->
+  
+  <script src="dist/js/pages/dashboard2.js"></script>

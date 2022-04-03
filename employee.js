@@ -1,4 +1,5 @@
-var app = angular.module('employeeApp', ['ngRoute']);
+var app = angular.module('employeeApp', ['ngRoute', 'ngSanitize', 'schemaForm']);
+
 
 
 

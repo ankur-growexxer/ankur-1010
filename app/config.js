@@ -10,4 +10,12 @@ app.config(function ($routeProvider) {
       //   controller: 'FormController'
 
     })
+    .when("/employeelist", {
+        templateUrl: 'app/pages/employee.html',
+        controller: 'FormController'
+    })
+    .when("/addemployee", {
+        templateUrl: 'app/pages/addemployee.html',
+        controller: 'FormController'
+    })
 });
